@@ -35,6 +35,8 @@ class ToDoManager {
         const deleteBtn = document.createElement('button');
 
         newInput.type = 'text';
+        newInput.maxLength = 35;
+        newInput.style.width = '230px'
         newInput.value = inputValue;
         newInput.className = 'input-ToDo-copy';
         newInput.disabled = 'true';
@@ -94,6 +96,8 @@ class ToDoManager {
         const deleteBtn = document.createElement('button');
         
         doneInput.type = 'text';
+        doneInput.maxLength = 35;
+        doneInput.style.width = '230px'
         doneInput.value = doneValue;
         doneInput.className = 'done-ToDo-copy';
         doneInput.disabled = 'true';
